@@ -5,20 +5,17 @@
 /// 2. Write your first function
 /// 3. Write your first test
 
-module challenge::day_02 {
-    #[test_only]
-    use std::unit_test::assert_eq;
 
-    // TODO: Write a function called 'sum' that takes two u64 numbers
-    // and returns their sum
-    // public fun sum(a: u64, b: u64): u64 {
-    //     // Your code here
-    // }
+///function that summarize two number 
+module book ::math;
+#[test_only]
+use std:unit_test:assert_eq;
+public fun add (a:u64,b:u64):u64{
 
-    // TODO: Write a test function that checks sum(1, 2) == 3
-    // #[test]
-    // fun test_sum() {
-    //     // Your code here
-    // }
+}
+#[test]
+fun test_add(){
+    let sum=add(1,2);
+    assert_eq!(sum, 3);
 }
 
